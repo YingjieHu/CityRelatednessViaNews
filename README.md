@@ -11,7 +11,7 @@ Hu, Y., Ye, X., & Shaw, S. L. (2017). Extracting and analyzing semantic relatedn
 
 With city relatedness extracted from news articles under different semantic topics, we can construct and visualize city networks. The figure below shows the city relatedness under the topics of "Politics" and "Science and Technology" respectively. <br />
 
-<img src="https://github.com/YingjieHu/CityRelatednessViaNews/blob/master/Figures/CityRelatedness.png" width="600" />
+<div style="text-align: center;"><img src="https://github.com/YingjieHu/CityRelatednessViaNews/blob/master/Figures/CityRelatedness.png" width="600" /></div>
 
 
 ### Repository organization
