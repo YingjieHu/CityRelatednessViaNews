@@ -1,0 +1,7 @@
+{
+  cityFile:"cities.csv",   # the name of the cities for this study
+  startingYear: "2014",    # starting year of your study
+  endingYear: "2014",      # ending year of your study
+  apiKey:["****","*****"]   # your API key for using Guaridian; you can input multiple API 
+                             # keys in the form of ["*****","*****","*****"] in order to retrieve many news articles                          
+}
