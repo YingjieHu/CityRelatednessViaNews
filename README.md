@@ -9,8 +9,9 @@ This project provides software tools for examining city relatedness based on the
 
 Hu, Y., Ye, X., & Shaw, S. L. (2017). Extracting and analyzing semantic relatedness between cities using news articles. International Journal of Geographical Information Science, 31(12), 2427-2451.
 
-With city relatedness extracted from news articles under different semantic topics, we can construct and visualize city networks. The figure below shows the city relatedness under the topics of "Politics" and "Science and Technology" respectively.
-<img src="https://github.com/YingjieHu/CityRelatednessViaNews/blob/master/Figures/CityRelatedness.png" width="500">
+With city relatedness extracted from news articles under different semantic topics, we can construct and visualize city networks. The figure below shows the city relatedness under the topics of "Politics" and "Science and Technology" respectively. <br />
+
+<img src="https://github.com/YingjieHu/CityRelatednessViaNews/blob/master/Figures/CityRelatedness.png" width="600" />
 
 
 ### Repository organization
