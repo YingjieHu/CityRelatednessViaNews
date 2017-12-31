@@ -46,7 +46,15 @@ You need to replace the name of the model "llda-cvb0-94bad065..." with the name 
 
 java -jar tmt-0.4.0.jar Test_LLDA.scala
 
-When the program has finished running, you can open the folder of your model (named like "llda-cvb0-94bad065..."), and the inferred results (topics) are in the files "Guardian_Testing_News-document-topic-distributuions.csv", "Guardian_Testing_News-top-terms.csv", and "Guardian_Testing_News-usage.csv". To know the labels of each topic in the document topic distribution, you can open one of the snapshot folders (The LLDA model generates a snapshot after it runs every 50 iterations), such as "01000", and the topic labels are in the file "label-index.txt".
+When the program has finished running, you can open the folder of your model (named like "llda-cvb0-94bad065..."), and the inferred results (topics) are in the following files:
+- "Guardian_Testing_News-document-topic-distributuions.csv". This file contains the topic distributions for each document (i.e., each news article). Please note that the topics are in the form of indices without the names of the topics. To know the textual label of each topic, you can open one of the snapshot folders (The LLDA model generates a snapshot after it runs every 50 iterations), such as "01000", and the topic labels are in the file "label-index.txt".
+
+- "Guardian_Testing_News-top-terms.csv". This file contains the top terms of each topic, and can be used to generate word clouds. An example figure is shown as below: 
+<p align="center">
+<img align="center" src="https://github.com/YingjieHu/CityRelatednessViaNews/blob/master/Figures/WordCloud.png" width="600" />
+</p>
+
+- "Guardian_Testing_News-usage.csv". This file contains the distribution of each topic among documents and words.
 
    
 
