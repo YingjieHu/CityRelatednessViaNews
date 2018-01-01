@@ -39,10 +39,7 @@ The "Guardian_Training_News.csv" file provides a sample of training data, and th
 
 java -jar tmt-0.4.0.jar Train_LLDA.scala
 
-The training process will produce a trained model in a folder named similar to "llda-cvb0-94bad065-17-25ed240e-32138829". Some ancillary files, such as term counts, will also be generated. With the trained LLDA model, we can now use it to infer topics from unseen news articles. The "Guardian_Testing_News.csv" file provides a sample of testing data, and the "Test_LLDA.scala" file provides the testing script. Before running the testing, you need to slightly edit the "Test_LLDA.scala" file. Open this file, and find the line:
-val modelPath = file("llda-cvb0-94bad065-17-25ed240e-32138829");
-
-You need to replace the name of the model "llda-cvb0-94bad065..." with the name of your trained model from the last step (each time the training process will generate a random series number). Once you have added the name of your own model, close and save "Test_LLDA.scala". Now, run the following code in terminal:
+The training process will produce a trained model in a folder named similar to "llda-cvb0-94bad065-17-25ed240e-32138829". Some ancillary files, such as term counts, will also be generated. With the trained LLDA model, we can now use it to infer topics from unseen news articles. The "Guardian_Testing_News.csv" file provides a sample of testing data, and the "Test_LLDA.scala" file provides the testing script. Before running the testing, you need to slightly edit the "Test_LLDA.scala" file. Open this file, and find the line: val modelPath = file("llda-cvb0-94bad065-17-25ed240e-32138829"); You need to replace the name of the model "llda-cvb0-94bad065..." with the name of your trained model from the last step (each time the training process will generate a random series number). Once you have added the name of your own model, close and save "Test_LLDA.scala". Now, run the following code in terminal:
 
 java -jar tmt-0.4.0.jar Test_LLDA.scala
 
