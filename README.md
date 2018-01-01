@@ -56,8 +56,17 @@ When the program has finished running, you can open the folder of your model (na
 
 - "Guardian_Testing_News-usage.csv". This file contains the distribution of each topic among documents and words.
 
-   
 
+### Pathfinder Network Visualization
+The folder "PFNet" contains the software tools for performing network pruning and visualization. The file "Guardian_combined_result.csv" contains the city co-occurrence data extracted from a set of Guardian news articles, with rows for city pairs and columns for different semantic topics. The file "label-index.txt" contains the labels of the semantic topics. The program "NetworkDataExtractor.jar" can extract the data suitable to be input into the Pathfinder algorithm. In a terminal, type:
+
+java -jar NetworkDataExtractor.jar
+
+As an example, this code will extract data under the semantic topic of "Politics", and you should see two files "PathFinder_Politics.prx.txt" (the proximity file) and "terms.txt" (the term file). These two files can be used as input for the Pathfinder algorithm. If you want to extract data under other semantic topics or customize the program, the source code is provided in the "Source" folder. Type the following command in a terminal to start the Pathfinder software:
+
+java -jar JPathfinder.jar
+
+Click "New Directory" button in the GUI to set up the working directory, and then click "Add Proximity Data" button to add the "PathFinder_Politics.prx.txt" file (the term file will be automatically added). Click "Derive Network" to obtain the network based on the city relatedness. You can click the "Display Network" button to quickly visualize the network. You can then click the "Network Link List" button to save the derived network into a csv file that can be put into a network visualization tool Gephi. More details about the usage of JPathfinder can be found at http://interlinkinc.net/, and a user manual is also included in the folder. Information about Gephi can be found at https://gephi.org/users/download/.      
 
 
 
