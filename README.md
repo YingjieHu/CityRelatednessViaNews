@@ -48,14 +48,14 @@ When the program has finished running, you can open the folder of your model (na
 
 - "Guardian_Testing_News-top-terms.csv". This file contains the top terms of each topic, and can be used to generate word clouds. An example figure is shown as below: 
 <p align="center">
-<img align="center" src="https://github.com/YingjieHu/CityRelatednessViaNews/blob/master/Figures/WordCloud.png" width="800" />
+<img align="center" src="https://github.com/YingjieHu/CityRelatednessViaNews/blob/master/Figures/WordCloud.png" width="700" />
 </p>
 
-- "Guardian_Testing_News-usage.csv". This file contains the distribution of each topic among documents and words.
+- "Guardian_Testing_News-usage.csv". This file contains the distribution of each topic among the documents and words.
 
 
-### Pathfinder Network Visualization
-The folder "PFNet" contains the software tools for performing network pruning and visualization. The file "Guardian_combined_result.csv" contains the city co-occurrence data extracted from a set of Guardian news articles, with rows for city pairs and columns for different semantic topics. The file "label-index.txt" contains the labels of the semantic topics. The program "NetworkDataExtractor.jar" can extract the data suitable to be input into the Pathfinder algorithm. In a terminal, type:
+### Pathfinder Network 
+The folder "PFNet" contains the software tools for performing network pruning. The file "Guardian_combined_result.csv" contains the city co-occurrence data extracted from a set of Guardian news articles, with rows for city pairs and columns for different semantic topics. The file "label-index.txt" contains the labels of the semantic topics. The program "NetworkDataExtractor.jar" can extract the data suitable to be input into the Pathfinder algorithm. In a terminal, type:
 
 java -jar NetworkDataExtractor.jar
 
