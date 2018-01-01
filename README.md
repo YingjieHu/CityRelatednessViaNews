@@ -48,7 +48,7 @@ When the program has finished running, you can open the folder of your model (na
 
 - "Guardian_Testing_News-top-terms.csv". This file contains the top terms of each topic, and can be used to generate word clouds. An example figure is shown as below: 
 <p align="center">
-<img align="center" src="https://github.com/YingjieHu/CityRelatednessViaNews/blob/master/Figures/WordCloud.png" width="600" />
+<img align="center" src="https://github.com/YingjieHu/CityRelatednessViaNews/blob/master/Figures/WordCloud.png" width="800" />
 </p>
 
 - "Guardian_Testing_News-usage.csv". This file contains the distribution of each topic among documents and words.
