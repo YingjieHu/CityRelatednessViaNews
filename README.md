@@ -1,4 +1,4 @@
-# CityRelatednessViaNews
+# Examining City Relatedness through News Articles
 
 * Author: Yingjie Hu
 * Email: yjhu.geo@gmail.com
