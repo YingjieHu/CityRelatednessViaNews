@@ -143,8 +143,17 @@ public class GuardianRetriever
 							}
 							// first page situation handled
 							
-							jsonObject = new JSONObject(result);
-							jsonObject = jsonObject.getJSONObject("response");
+							try 
+							{
+								jsonObject = new JSONObject(result);
+								jsonObject = jsonObject.getJSONObject("response");
+							} 
+							catch (Exception eeee) 
+							{
+								StdOut.println(cityA+"-"+cityB+", page "+k+" failed, skipped ...");
+								continue;
+							}
+							
 							JSONArray docs = jsonObject.getJSONArray("results");
 							for(int docIndex = 0;docIndex<docs.length();docIndex++)
 							{
